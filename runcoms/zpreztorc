@@ -37,6 +37,7 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
+  'git' \
   'completion' \
   'history-substring-search' \
   'prompt'
@@ -75,6 +76,9 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
 # zstyle ':prezto:module:git:status:ignore' submodules 'all'
+
+# Ingore all the crazy git aliases provides by the git module
+zstyle ':prezto:module:git:alias' skip 'yes'
 
 #
 # GNU Utility
